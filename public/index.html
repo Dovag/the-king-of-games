@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The King of Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: white;
+        }
+        h1 { font-size: 3rem; text-align: center; margin-bottom: 2rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.5); }
+        .nav-cards { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
+        .nav-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+            padding: 2rem 3rem; text-align: center; text-decoration: none; color: white;
+            font-size: 1.5rem; font-weight: bold; transition: transform 0.3s, border-color 0.3s;
+        }
+        .nav-card:hover { transform: translateY(-5px); border-color: rgba(255, 255, 255, 0.6); }
+        .nav-card .icon { font-size: 3rem; display: block; margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <h1>The King of Games</h1>
+    <div class="nav-cards">
+        <a href="Games/Games.html" class="nav-card"><span class="icon">🎮</span>Games</a>
+        <a href="Movies/Movies.html" class="nav-card"><span class="icon">🎬</span>Movies</a>
+        <a href="Shows/Shows.html" class="nav-card"><span class="icon">📺</span>Shows</a>
+        <a href="Music/Music.html" class="nav-card"><span class="icon">🎵</span>Music</a>
+    </div>
+</body>
+</html>
