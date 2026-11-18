@@ -1,0 +1,13 @@
+{
+  "name": "the-king-of-games",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init:remote": "wrangler d1 execute ranking-db --remote --file=schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}
