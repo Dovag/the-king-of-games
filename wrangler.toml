@@ -1,0 +1,14 @@
+name = "the-king-of-games"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+
+[assets]
+directory = "./public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ranking-db"
+database_id = "c1200d93-15f1-424e-9b45-7d08b3d82631"
+
+[triggers]
+crons = ["0 0 31 12 *"]
