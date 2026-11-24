@@ -64,7 +64,7 @@
     font-size: 1.35rem;
     font-weight: 700;
     text-decoration: none;
-    transition: background 0.2s ease;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   }
 
   .nav-card .icon {
@@ -73,7 +73,11 @@
     filter: grayscale(1) brightness(1.4);
   }
 
-  .nav-card:hover { background: #1a1a1a; }
+  .nav-card:hover {
+    background: #1a1a1a;
+    transform: translateY(-4px);
+    box-shadow: 0 0 24px rgba(255, 255, 255, 0.35);
+  }
 </style>
 </head>
 <body>
