@@ -1,43 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The King of Games</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-            color: white;
-        }
-        h1 { font-size: 3rem; text-align: center; margin-bottom: 2rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.5); }
-        .nav-cards { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
-        .nav-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            border-radius: 15px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
-            padding: 2rem 3rem; text-align: center; text-decoration: none; color: white;
-            font-size: 1.5rem; font-weight: bold; transition: transform 0.3s, border-color 0.3s;
-        }
-        .nav-card:hover { transform: translateY(-5px); border-color: rgba(255, 255, 255, 0.6); }
-        .nav-card .icon { font-size: 3rem; display: block; margin-bottom: 0.5rem; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The King of Games</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .welcome {
+    margin: 0 0 0.7rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+    opacity: 0.75;
+  }
+
+  h1 {
+    margin: 0 0 3rem;
+    font-size: clamp(2.2rem, 7vw, 3.6rem);
+    font-weight: 800;
+    line-height: 1.1;
+  }
+
+  .nav-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .nav-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 170px;
+    padding: 1.8rem 2.6rem;
+    background: #000;
+    border: 2px solid #fff;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+
+  .nav-card .icon {
+    font-size: 2.2rem;
+    line-height: 1;
+    filter: grayscale(1) brightness(1.4);
+  }
+
+  .nav-card:hover { background: #1a1a1a; }
+</style>
 </head>
 <body>
+  <main>
+    <p class="welcome">Welcome to</p>
     <h1>The King of Games</h1>
+
     <div class="nav-cards">
-        <a href="Games/Games.html" class="nav-card"><span class="icon">🎮</span>Games</a>
-        <a href="Movies/Movies.html" class="nav-card"><span class="icon">🎬</span>Movies</a>
-        <a href="Shows/Shows.html" class="nav-card"><span class="icon">📺</span>Shows</a>
-        <a href="Music/Music.html" class="nav-card"><span class="icon">🎵</span>Music</a>
+      <a href="Games/Games.html" class="nav-card"><span class="icon">🎮</span>Games</a>
+      <a href="Movies/Movies.html" class="nav-card"><span class="icon">🎬</span>Movies</a>
+      <a href="Shows/Shows.html" class="nav-card"><span class="icon">📺</span>Shows</a>
+      <a href="Music/Music.html" class="nav-card"><span class="icon">🎵</span>Music</a>
     </div>
+  </main>
 </body>
 </html>
